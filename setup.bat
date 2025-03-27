@@ -13,13 +13,13 @@ call venv\Scripts\activate
 :: Install required packages
 echo [*] Installing dependencies...
 pip install wmi 
-echo wmi installed
+echo wmi installed \n
 pip install telebot 
-echo telebot installed
+echo telebot installed \n
 pip install scikit-learn
-echo sckikit installed
+echo sckikit installed \n
 pip install logging
-echo logging installed
+echo logging installed \n
 
 :: Confirmation message
 echo [*] Setup complete! 
