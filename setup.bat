@@ -1,4 +1,12 @@
 @echo off
+:: Check for admin privileges
+net session >nul 2>&1
+if %errorLevel% neq 0 (
+    echo Requesting administrator privileges...
+    powershell -Command "Start-Process cmd -ArgumentList '/c \"%~f0\"' -Verb RunAs"
+    exit /b
+)
+@echo off
 echo [*] Setting up the project...
 
 :: Create and activate virtual environment
