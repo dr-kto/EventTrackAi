@@ -29,6 +29,8 @@ pip install scikit-learn
 echo sckikit installed \n
 pip install logging
 echo logging installed \n
+pip install --upgrade urllib3 requests
+echo requests, urllib3 installed \n
 
 :: Confirmation message
 echo [*] Setup complete! 
