@@ -12,7 +12,14 @@ python.exe -m pip install --upgrade pip
 call venv\Scripts\activate
 :: Install required packages
 echo [*] Installing dependencies...
-pip install wmi telebot scikit-learn logging
+pip install wmi 
+echo wmi installed
+pip install telebot 
+echo telebot installed
+pip install scikit-learn
+echo sckikit installed
+pip install logging
+echo logging installed
 
 :: Confirmation message
 echo [*] Setup complete! 
