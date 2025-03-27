@@ -6,7 +6,8 @@ if %errorLevel% neq 0 (
     powershell -Command "Start-Process cmd -ArgumentList '/c \"%~f0\"' -Verb RunAs"
     exit /b
 )
-@echo off
+:: Navigate to the script directory
+cd /d %~dp0
 echo [*] Setting up the project...
 
 :: Create and activate virtual environment
